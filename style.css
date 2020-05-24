@@ -33,13 +33,15 @@ form > input,form > button, form > select{
     padding: 6px 12px;
     border-radius: 4px;
     font-size: 15px;
+    border: none;
+    box-shadow: 0 0 3px;
 }
 
 .grid{
-    height: 100vh;
+    height: calc(100vh - 74px);
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-auto-rows: 265px;
+    grid-auto-rows: 350px;
     background-color: rgb(245, 58, 25);
     padding: 5px;
     margin-top:74px
@@ -50,12 +52,17 @@ form > input,form > button, form > select{
 }
 
 .video-card{
+    cursor: pointer;
     background-color: rgb(255, 255, 255);
     margin:5px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 80% 20%;
-    box-shadow: 0 0 3px;
+    transition-duration: 200ms;
+}
+
+.video-card:hover{
+    box-shadow: 0 0 5px;
 }
 
 .video-card > .thumbnail > img{
@@ -70,4 +77,15 @@ form > input,form > button, form > select{
 
 #searchField{
     width: 240px;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(59, 59, 59);
+    transition-duration: 200ms;
+}
+
+a:hover{
+    text-decoration: none;
+    color:black;
 }

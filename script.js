@@ -18,7 +18,7 @@ form.addEventListener("submit", async (e) => {
     e.preventDefault();
     let convertedQs = convertDataToQuery(getData());
     let fullUrl = `${baseUrl}/search?${convertedQs}&${apiKey}&${partSnippet}`
-    let queryData = await doQuery(fullUrl);
+    //let queryData = await doQuery(fullUrl);
 })
 
 const getData = () => {
