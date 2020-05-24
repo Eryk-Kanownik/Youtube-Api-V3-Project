@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav{
+    background-color: rgb(53, 53, 53);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 3px;
+}
+
+nav > ul{
+    margin: 0;
+    padding: 10px;
+}
+
+nav > ul > li{
+    display: inline-block;
+}
+
+form{
+    padding: 20px;
+}
+
+form > input,form > button, form > select{
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.grid{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-rows: 265px;
+    background-color: rgb(245, 58, 25);
+    padding: 5px;
+    margin-top:74px
+}
+
+#quantity{
+    width: 130px;
+}
+
+.video-card{
+    background-color: rgb(255, 255, 255);
+    margin:5px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+    box-shadow: 0 0 3px;
+}
+
+.video-card > .thumbnail > img{
+    width: 100%
+}
+
+.video-card > .info{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#searchField{
+    width: 240px;
+}

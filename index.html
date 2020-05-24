@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>YouTube API v3 Project</title>
+     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+ </head>
+ <body>
+     <nav>
+        <form>
+            <input type="text" id="searchField" placeholder="What you want to find..."/>
+            <input type="number" id="quantity" placeholder="How many..."/>
+            <select id="order">
+                <option value="relevance">Relevance</option>
+                <option value="date">Date</option>
+                <option value="rating">Rating</option>
+                <option value="title">Title</option>
+                <option value="viewCount">View count</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+     </nav>
+     <div class="grid">
+        <div class="video-card">
+            <div class="thumbnail">
+                <img src="https://picsum.photos/320/180">
+            </div>
+            <div class="info">
+                <div class="title">Title</div>
+                <div class="channelName">Channel Name</div>
+            </div>
+        </div>
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+     <script src="script.js"></script>
+ </body>
+ </html>
