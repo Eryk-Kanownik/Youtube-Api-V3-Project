@@ -67,6 +67,10 @@ form > input,form > button, form > select{
     box-shadow: 0 0 5px;
 }
 
+.video-card > .thumbnail{
+    overflow: hidden;
+}
+
 .video-card > .thumbnail > img{
     width: 100%
 }

@@ -19,6 +19,7 @@ form.addEventListener("submit", async (e) => {
     let convertedQs = convertDataToQuery(getData());
     let fullUrl = `${baseUrl}/search?${convertedQs}&${apiKey}&${partSnippet}`
     let queryData = await doQuery(fullUrl);
+    grid.innerHTML = ""
     queryData.items.map(elem => containerCreator(elem))
     
 })
@@ -26,7 +27,7 @@ form.addEventListener("submit", async (e) => {
 const getData = () => {
     return{
         q:document.querySelector("#searchField").value ? document.querySelector("#searchField").value : "",
-        maxResults:document.querySelector("#quantity").value ? document.querySelector("#quantity").value : "5",
+        maxResults:document.querySelector("#quantity").value ? document.querySelector("#quantity").value : "10",
         order:document.querySelector("#order").value,
     }
 }
@@ -55,24 +56,3 @@ const containerCreator = (data) => {
     </div>`
     grid.innerHTML += container;
 }
-
-
-
-const testObj = {
-    etag: "4rtIIgorfxYJjNgl7knrc5EBdvo",
-    id: {kind: "youtube#video", videoId: "4YReSWm4iMo"},
-    kind: "youtube#searchResult",
-    channelId: "UCWljxewHlJE3M7U_6_zFNyA",
-    channelTitle: "AwesomenessTV",
-    description: "Bailey throws her brother a disco themed birthday party and everyone is invited! However, when an unexpected guest arrives, things take a turn. This is one ...",
-    liveBroadcastContent: "none",
-    publishTime: "2020-05-15T12:15:00Z",
-    publishedAt: "2020-05-15T12:15:00Z",
-    thumbnails:{
-        default: {url: "https://i.ytimg.com/vi/4YReSWm4iMo/default.jpg", width: 120, height: 90},
-        high: {url: "https://i.ytimg.com/vi/4YReSWm4iMo/hqdefault.jpg", width: 480, height: 360},
-        medium: {url: "https://i.ytimg.com/vi/4YReSWm4iMo/mqdefault.jpg", width: 320, height: 180}
-    },
-    title: "bad guy | MALIBU SURF Season 5 EP 16"
-}
-
