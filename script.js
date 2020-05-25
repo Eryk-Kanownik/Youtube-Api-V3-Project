@@ -32,17 +32,6 @@ const getData = () => {
     }
 }
 
-const templateStr = 
-`<div class='video-card'>
-    <div class='thumbnail'>
-        <img src="https://picsum.photos/320/180">
-    </div>
-    <div class="info">
-        <div class="title">Title</div>
-        <div class="channelName">Channel Name</div>
-    </div>
-</div>`
-
 const containerCreator = (data) => {
     let container = 
     `<div class='video-card'>
