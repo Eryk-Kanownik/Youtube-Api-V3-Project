@@ -1,7 +1,7 @@
 const form = document.querySelector("form");
 const grid = document.querySelector(".grid");
 
-const apiKey = "key=AIzaSyCGkOgIs7oq0gE0utgcb-chCRsyUvUjAoc";
+const apiKey = "";
 const baseUrl = "https://www.googleapis.com/youtube/v3";
 const partSnippet = 'part=snippet'
 
