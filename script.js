@@ -74,6 +74,7 @@ const createModal = (vidId,vidTitle,channelId,channelTitle) => {
                     <p><a href="https://www.youtube.com/channel/${channelId}" target="blank">${channelTitle}</a></p>
                     <p><a href="https://www.youtube.com/watch?v=${vidId}" target="blank">${vidTitle}</a></p>
                     <p class="inf">Remember to pause video before you click outside</p>
+                    <p class="inf">If video is unavalible it means that video has copyrights</p>
                 </div>
             </div>
         </div>
